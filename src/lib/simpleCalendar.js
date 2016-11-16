@@ -52,7 +52,7 @@ function simpleCalendarCtrl($scope, $element, $attrs, simpleCalendarConfig) {
   var vm = this;
   var cal_opts = angular.extend(simpleCalendarConfig, {siblingMonths: true});
   var cal = new Calendar(cal_opts);
-  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
   var start = days.splice(simpleCalendarConfig.weekStart);
 
   vm.weekdays = start.concat(days);
