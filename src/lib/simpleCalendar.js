@@ -31,7 +31,7 @@ function simpleCalendarDirective($compile) {
 
         if (events.length){
           var eventTemplate = angular
-            .element('<div class="simple-calendar-event" />')
+            .element('<div class="simple-calendar-event agy"></div>')
             .attr('ng-repeat', '$event in $day.events')
             .attr('ng-click', 'calendar.onEventClick($day.events[$index], $day); $event.stopPropagation();')
             .html(events.html());
