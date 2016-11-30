@@ -25,7 +25,7 @@ function simpleCalendarDirective($compile) {
 
         var dayTemplateEl = directiveTemplateBuilder.querySelectorAll('simple-calendar-day');
         var events = directiveTemplateBuilder.querySelectorAll('simple-calendar-event');
-        var dayTemplateBuilder = angular.element('<div />');
+        var dayTemplateBuilder = angular.element('<div></div>');
 
         dayTemplateBuilder.append(dayTemplateEl.html() || '{{$day.day}}');
 
